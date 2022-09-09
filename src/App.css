@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+body{
+    background-color: sienna;
+    background-image: linear-gradient(to right, sienna,slateblue,sienna);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parentContainer{
+    text-align: center;
+    height: 60vh;
+    margin: 20vh 0px;
+    background-color:rgba(244, 164, 96,0.7);
+    /*background-image: linear-gradient(to left,rgb(160, 82, 45),rgb(106, 90, 205),rgb(160, 82, 45),slateblue,sienna);*/
 }
+.texthighlight{
+    background-image: linear-gradient(to right,rgb(160, 82, 45),rgb(106, 90, 205),rgb(160, 82, 45),slateblue,sienna);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    color:black;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    width: 15%;
+    height: 4vh;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0px 0px 10px 0px;
+    font-size: 16px;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(68, 56, 145);
+    padding: 10px;
+    text-align: left;
 }
-
-.App-link {
-  color: #61dafb;
+h2{
+    font-size: 32px;
+    padding-top: 5vh;
 }
+.justonce{
+    font-size: 21px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+button{
+    width: 5%;
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px 0px 30px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    background-color:rgb(68, 56, 145);
+    color: rgb(208, 255, 0);
+}
+.output{
+    font-size: 26px;
+    font-weight: 600;
+}
+@keyframes example{
+    0%{
+        font-size: 32px;
+    }
+    25%{
+        font-size: 26px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    }
+    50%{
+        font-size: 32px;
+
+    }
+    75%{
+        font-size: 26px;
+    }
+    100%{
+        font-size: 32px;
+
+    }
+}
+footer{
+    margin: 25px 0px;
+    text-decoration:overline;
 }
