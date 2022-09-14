@@ -84,3 +84,11 @@ footer{
     margin: 25px 0px;
     text-decoration:overline;
 }
+.note{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    background-color:black;
+    color: darkgoldenrod;
+    font-weight: 600;
+}

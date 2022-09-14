@@ -183,6 +183,7 @@ function App() {
       {/*<div>{countfordisplay}</div>*/}
       <div className="output">{statofuserdate}{outputarray}</div>
       <footer><div id="footer">{footer}</div></footer>
+      <div className="note">**The calculation will be done only on DD/MM/YYYY format**</div>
       
       </div>
     </div>
