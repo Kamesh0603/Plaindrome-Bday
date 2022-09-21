@@ -17,7 +17,13 @@ function App() {
 
   function worker(){
     userdate=document.getElementById("userdate").value; // get date input
-
+    
+    if (userdate==""){
+    setOutputarray("Please select a date :)"); // if user gives empty input then display error and break
+    return
+  };
+  //if input is not empty then continue with below code
+    
    date = userdate.split(""); // converting date to array;
 
   for (var i=0;i<date.length;i++){ // removing "-" in date 
